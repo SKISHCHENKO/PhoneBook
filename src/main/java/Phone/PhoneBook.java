@@ -26,4 +26,8 @@ public class PhoneBook {
         }
         return "Такого человека нет, поскольку номер отсутствует в телефонной книге!";
     }
+
+    public String findByName(String phoneNumber){
+        return null;
+    }
 }

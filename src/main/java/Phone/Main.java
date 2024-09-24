@@ -9,12 +9,17 @@ public class Main {
         System.out.println("Количество контактов: "+ countContacts);
         countContacts = contactBook.add("Bob", "987654321");
         System.out.println("Количество контактов: "+ countContacts);
+
         String phoneNumber ="111111";
         String name = contactBook.findByNumber(phoneNumber);
         System.out.println("Имя человека, на которого записан номер " + phoneNumber+" : " + name);
         phoneNumber = "987654321";
         name = contactBook.findByNumber(phoneNumber);
         System.out.println("Имя человека, на которого записан номер " + phoneNumber+" : " + name);
+
+        String nameContact = "Alice";
+        String numberContact = contactBook.findByName(nameContact);
+        System.out.println("Номер " + nameContact +" : " + numberContact);
 
     }
 }

@@ -42,4 +42,19 @@ public class PhoneBookTest {
         assertEquals("Alice", contactBook.findByNumber("123456789"));
         assertEquals("Alice", name);
     }
+
+    @Test
+    public void findByName() {
+        PhoneBook contactBook = new PhoneBook();
+
+        // Добавляем контакт
+        int count = contactBook.add("Alice", "123456789");
+
+        // Получаем номер контакта по имени
+        String number = contactBook.findByName("Alice");
+
+        // Проверяем совпадает ли имя
+        assertEquals("123456789", contactBook.findByName("Alice"));
+        assertEquals("123456789", number);
+    }
 }
