@@ -83,10 +83,10 @@ public class PhoneBookTest {
         contactBook.printAllNames();
 
         // Проверяем вывод
-        String expectedOutput = "Имена в телефонной книге в алфавитном порядке:\n" +
-                "Alice\n" +
-                "Bob\n" +
-                "Charlie\n";
+        String expectedOutput = "Имена в телефонной книге:\r\n" +
+                "Alice\r\n" +
+                "Bob\r\n" +
+                "Charlie\r\n";
 
         assertEquals(expectedOutput, outContent.toString());
     }

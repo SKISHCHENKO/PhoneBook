@@ -35,6 +35,13 @@ public class PhoneBook {
         }
     }
     public void printAllNames() {
-        System.out.println("");
+        if (contacts.isEmpty()) {
+            System.out.println("Телефонная книга пуста!");
+        } else {
+            System.out.println("Имена в телефонной книге:");
+            for (String name : contacts.keySet()) {
+                System.out.println(name);
+            }
+        }
     }
 }
