@@ -27,4 +27,19 @@ public class PhoneBookTest {
         assertEquals("123456789", contactBook.getContacts().get("Alice"));
         assertEquals("987654321", contactBook.getContacts().get("Bob"));
     }
+
+    @Test
+    public void findByNumbers() {
+        PhoneBook contactBook = new PhoneBook();
+
+        // Добавляем контакт
+        int count = contactBook.add("Alice", "123456789");
+
+        // Получаем имя контакта по телефонному номеру
+        String name = contactBook.findByNumber("123456789");
+
+        // Проверяем совпадает ли имя
+        assertEquals("Alice", contactBook.findByNumber("123456789"));
+        assertEquals("Alice", name);
+    }
 }
