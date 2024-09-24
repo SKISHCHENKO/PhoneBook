@@ -27,7 +27,11 @@ public class PhoneBook {
         return "Такого человека нет, поскольку номер отсутствует в телефонной книге!";
     }
 
-    public String findByName(String phoneNumber){
-        return null;
+    public String findByName(String name){
+        if (contacts.containsKey(name)) {
+            return contacts.get(name);
+        } else {
+            return "Такого контакта не существует!";
+        }
     }
 }
