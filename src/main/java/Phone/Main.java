@@ -12,5 +12,9 @@ public class Main {
         String phoneNumber ="111111";
         String name = contactBook.findByNumber(phoneNumber);
         System.out.println("Имя человека, на которого записан номер " + phoneNumber+" : " + name);
+        phoneNumber = "987654321";
+        name = contactBook.findByNumber(phoneNumber);
+        System.out.println("Имя человека, на которого записан номер " + phoneNumber+" : " + name);
+
     }
 }

@@ -18,7 +18,12 @@ public class PhoneBook {
         return contacts.size();
     }
 
-    public String findByNumber(String phoneNumber){
-        return null;
+    public String findByNumber(String phoneNumber) {
+        for (Map.Entry<String, String> entry : contacts.entrySet()) {
+            if (entry.getValue().equals(phoneNumber)) {
+                return entry.getKey();
+            }
+        }
+        return "Такого человека нет, поскольку номер отсутствует в телефонной книге!";
     }
 }
