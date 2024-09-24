@@ -1,11 +1,11 @@
 package Phone;
 
-import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class PhoneBook {
 
-    private final Map<String, String> contacts = new HashMap<>();
+    private Map<String, String> contacts = new TreeMap<>();
 
     public Map<String, String> getContacts() {
         return contacts;
@@ -33,5 +33,8 @@ public class PhoneBook {
         } else {
             return "Такого контакта не существует!";
         }
+    }
+    public void printAllNames() {
+        System.out.println("");
     }
 }

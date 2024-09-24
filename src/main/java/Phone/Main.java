@@ -21,5 +21,10 @@ public class Main {
         String numberContact = contactBook.findByName(nameContact);
         System.out.println("Номер " + nameContact +" : " + numberContact);
 
+        contactBook.add("Charlie", "123456789");
+        contactBook.add("Alice", "987654321");
+        contactBook.add("Bob", "555555555");
+
+        contactBook.printAllNames();
     }
 }
