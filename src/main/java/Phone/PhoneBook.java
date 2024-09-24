@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class PhoneBook {
 
-    private Map<String, String> contacts = new HashMap<>();
+    private final Map<String, String> contacts = new HashMap<>();
 
     public Map<String, String> getContacts() {
         return contacts;
@@ -18,4 +18,7 @@ public class PhoneBook {
         return contacts.size();
     }
 
+    public String findByNumber(){
+        return null;
+    }
 }
